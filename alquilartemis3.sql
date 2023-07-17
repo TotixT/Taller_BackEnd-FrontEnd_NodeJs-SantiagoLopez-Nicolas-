@@ -78,9 +78,9 @@ CREATE TABLE `cotizaciones` (
   `fk_id_empleado` int(11) NOT NULL,
   `fk_id_constructora` int(11) NOT NULL,
   `fecha_cotizacion` date NOT NULL,
-  `hora_cotizacion` varchar(20) NOT NULL,
+  `hora_cotizacion` TIME NOT NULL,
   `dia_alquiler` varchar(55) NOT NULL,
-  `duracion_alquiler` int(11) NOT NULL
+  `duracion_alquiler` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
